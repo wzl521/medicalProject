@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.4</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.zut.edu</groupId>
+    <artifactId>medical</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>medical</name>
+    <description>Demo project for Spring Boot</description>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!--数据库连接池-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.29</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
+        <!-- 日志 -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.49</version>
+        </dependency>
+        <!-- fabric-gateway -->
+        <dependency>
+            <groupId>org.hyperledger.fabric</groupId>
+            <artifactId>fabric-gateway-java</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hyperledger.fabric-sdk-java</groupId>
+            <artifactId>fabric-sdk-java</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.ipfs/java-ipfs-http-client -->
+        <dependency>
+            <groupId>com.github.ipfs</groupId>
+            <artifactId>java-ipfs-http-client</artifactId>
+            <version>v1.3.3</version>
+        </dependency>
+
+        <!-- 配置gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.5</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.ipfs/java-ipfs-api -->
+        <dependency>
+            <groupId>com.github.ipfs</groupId>
+            <artifactId>java-ipfs-api</artifactId>
+            <version>v1.2.2</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.github.multiformats/java-multiaddr -->
+        <dependency>
+            <groupId>com.github.multiformats</groupId>
+            <artifactId>java-multiaddr</artifactId>
+            <version>v1.4.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.github.multiformats/java-multihash -->
+        <dependency>
+            <groupId>com.github.multiformats</groupId>
+            <artifactId>java-multihash</artifactId>
+            <version>v1.3.0</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.github.ipld/java-cid -->
+        <dependency>
+            <groupId>com.github.ipld</groupId>
+            <artifactId>java-cid</artifactId>
+            <version>v1.3.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.github.multiformats/java-multibase -->
+        <dependency>
+            <groupId>com.github.multiformats</groupId>
+            <artifactId>java-multibase</artifactId>
+            <version>v1.1.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.github.ipfs/java-ipfs-http-client -->
+        <dependency>
+            <groupId>com.github.ipfs</groupId>
+            <artifactId>java-ipfs-http-client</artifactId>
+            <version>v1.3.3</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.github.ipfs/java-ipfs-api -->
+        <dependency>
+            <groupId>com.github.ipfs</groupId>
+            <artifactId>java-ipfs-api</artifactId>
+            <version>v1.2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <version>1.3</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.multiformats/java-multiaddr -->
+        <dependency>
+            <groupId>com.github.multiformats</groupId>
+            <artifactId>java-multiaddr</artifactId>
+            <version>v1.4.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.deepoove</groupId>
+            <artifactId>poi-tl</artifactId>
+            <version>1.9.1</version>
+        </dependency>
+
+
+<!--        <dependency>-->
+<!--            <groupId>org.apache.poi</groupId>-->
+<!--            <artifactId>poi-ooxml</artifactId>-->
+<!--            <version>3.14</version>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/e-iceblue/spire.pdf -->
+        <dependency>
+            <groupId>e-iceblue</groupId>
+            <artifactId>spire.pdf</artifactId>
+            <version>3.2.3</version>
+        </dependency>
+        <!-- hutool工具类-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.3.3</version>
+        </dependency>
+        <!-- jwt -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+    </dependencies>
+
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.hyperledger.fabric-sdk-java/fabric-sdk-java &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.hyperledger.fabric-sdk-java</groupId>-->
+<!--            <artifactId>fabric-sdk-java</artifactId>-->
+<!--            <version>1.4.7</version>-->
+<!--        </dependency>-->
+
+
+
+        <!--        <dependency>-->
+<!--            <groupId>e-iceblue</groupId>-->
+<!--            <artifactId>free.spire.doc</artifactId>-->
+<!--            <version>2.7.3</version>-->
+<!--        </dependency>-->
+
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

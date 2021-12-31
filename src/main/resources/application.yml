@@ -1,0 +1,40 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /medical
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/medical?useUnicoding=true&characterEncoding=utf-8&noDatetimeStringSync=true&useSSL=false
+    username: root
+    password: 123456
+# 设置上传文件的大小
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 931775308
+      max-request-size: 1000MB
+
+  mvc:
+    static-path-pattern: /static/**
+#  thymeleaf:
+#    prefix: classpath:/templates
+#    cache: false
+#
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+#  type-aliases-package: wow.mapper
+#shiro-redis:
+#  enabled: true
+#  redis-manager:
+#    host: 127.0.0.1:6379
+#markerhub:
+#  jwt:
+#    # 加密秘钥
+#    secret: f4e2e52034348f86b67cde581c0f9eb5
+#    # token有效时长，7天，单位秒
+#    expire: 604800
+#    header: token
+#
+
